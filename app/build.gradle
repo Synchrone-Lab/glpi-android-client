@@ -1,0 +1,168 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        applicationId "fr.synchrone.glpisupport"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 1
+        versionName "0.9.0"
+
+        testInstrumentationRunner "fr.synchrone.glpisupport.core.GlpiJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            testCoverageEnabled = true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        useIR = true
+    }
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+        kotlinCompilerVersion kotlin_version
+    }
+
+    packagingOptions {
+        exclude "**/attach_hotspot_windows.dll"
+        exclude "META-INF/licenses/**"
+        exclude "META-INF/AL2.0"
+        exclude "META-INF/LGPL2.1"
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    //Core KTX
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+
+    //AppCompat
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+
+    //ConstraintLayout
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+
+    //Dagger Hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_compiler_version"
+    implementation "androidx.hilt:hilt-navigation-compose:$hilt_navigation_compose_version"
+
+    //Jetpack Compose
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.animation:animation:$compose_version"
+    implementation "androidx.navigation:navigation-compose:$compose_navigation_version"
+    implementation "androidx.compose.animation:animation-core:$compose_version"
+    implementation "androidx.compose.material:material:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation "androidx.compose.runtime:runtime-livedata:$compose_version"
+    implementation "androidx.constraintlayout:constraintlayout-compose:$compose_constraintlayout_version"
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
+    implementation 'androidx.activity:activity-compose:1.6.0-alpha01'
+    implementation "com.google.accompanist:accompanist-permissions:$accompanist_permissions_version"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    // KTX
+    implementation "androidx.activity:activity-ktx:$activity_ktx_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-moshi:$retrofit_version"
+
+    //OkHttp
+    implementation("com.squareup.okhttp3:logging-interceptor:$logging_interceptor")
+
+    //Moshi
+    implementation "com.squareup.moshi:moshi:$moshi_version"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    //CardView
+    implementation "androidx.cardview:cardview:$cardview_version"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+    //RecyclerView
+    implementation "androidx.recyclerview:recyclerview:$rv_version"
+
+    //DataStore
+    implementation "androidx.datastore:datastore-preferences:$datastore_version"
+
+    //Room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    //CameraX
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+    implementation "androidx.camera:camera-lifecycle:$camerax_version"
+    // If you want to additionally use the CameraX View class
+    implementation "androidx.camera:camera-view:$camerax_view_version"
+    // If you want to additionally use the CameraX Extensions library
+    implementation "androidx.camera:camera-extensions:$camerax_view_version"
+
+    //mlkit barcode
+    implementation 'com.google.mlkit:barcode-scanning:16.1.1'
+
+    //KeyboardVisibilityEvent
+    implementation "net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:$keyboard_visibility_event_version"
+
+    //test
+    androidTestImplementation "com.google.dagger:hilt-android-testing:$hilt_test_version"
+    kaptAndroidTest "com.google.dagger:hilt-compiler:$hilt_test_version"
+    testImplementation "com.google.dagger:hilt-android-testing:$hilt_test_version"
+    kaptTest "com.google.dagger:hilt-compiler:$hilt_test_version"
+    androidTestImplementation "androidx.test.ext:junit:$test_ext_version"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$espresso_intents_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$espresso_version"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
+    androidTestImplementation "androidx.arch.core:core-testing:$core_test_version"
+    testImplementation "junit:junit:$junit_version"
+    testImplementation "io.mockk:mockk:$mockk_version"
+    testImplementation "org.robolectric:robolectric:$roboelectric_version"
+}
