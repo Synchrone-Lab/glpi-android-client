@@ -22,7 +22,7 @@ You can check if API is online and working by clicking on API inline Documentati
 
 Then go back to **Setup** > **General** > **API** 
 
-<img src="./screenshots/activateAPIRangeIP.png" alt="drawing" width="900"/>
+<img src="./screenshots/activateAPIRangeIp.png" alt="drawing" width="900"/>
 
 If you want to provide some security, you can set an IP range restriction but be aware that your mobile device where the application will be installed has to be in this range. Leave it empty if you do not want to put some restrictions.
 

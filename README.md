@@ -5,7 +5,7 @@
 ![GitHub build](https://img.shields.io/circleci/build/github/glpi-project/android-inventory-agent.svg)![GitHub build](https://img.shields.io/badge/Unit%20Test-211%2F211-green)
 
 GLPI Android Client is a Open Source application created by [Synchrone](https://www.synchrone.fr).
-It's allow your company to to control, manage, maintain and track all your hardware and license directly from your Android device. 
+It's allow your company to to control, manage, maintain and track all your hardware and licenses directly from your Android device. 
 
 ## Functionalities
 
@@ -66,6 +66,7 @@ It's allow your company to to control, manage, maintain and track all your hardw
 ## Documentation
 
 - How to configure the application for your environment, please read the [INSTALL.md](./INSTALL.md)
+- If you want to contribute : [CONTRIBUTING.md](./CONTRIBUTING.md) (⚠under construction)
 
 ## Screenshots
 
@@ -95,9 +96,9 @@ If you have any idea of new features that can be implemented, feel free to conta
 * **Code**: you can redistribute it and/or modify
     it under the terms of the GNU General Public License ([GPLv2](https://www.gnu.org/licenses/gpl-2.0.en.html)).
 
-## Credit
+## Credits
 
 * [Synchrone](https://synchrone.fr)
 * Arnault Pascual : Android Tech Lead 
 * Quentin Diebold : Software engineer
-* Pierrick Bouvier : Software engineer
+* Pierrick Bouvier Aubrège : Software engineer
