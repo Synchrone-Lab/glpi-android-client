@@ -2,10 +2,10 @@
 
 [![License](https://img.shields.io/badge/Licence-GPL--2.0-orange)](https://www.gnu.org/licenses/gpl-2.0.fr.html) [![Follow twitter](https://img.shields.io/badge/Twitter-599-green)](https://twitter.com/SynchroneFr)
 [![Project Status: Active](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) [![GitHub release](https://img.shields.io/badge/Release-0.9.0-blue)](https://github.com/synchronelab/glpi-android-client/releases)
-![GitHub build](https://img.shields.io/circleci/build/github/glpi-project/android-inventory-agent.svg)![GitHub build](https://img.shields.io/badge/Unit%20Test-211%2F211-green)
+![GitHub build](https://img.shields.io/circleci/build/github/glpi-project/android-inventory-agent.svg)![GitHub build](https://img.shields.io/badge/Unit%20Test-211%2F211-green) 
 
 GLPI Android Client is a Open Source application created by [Synchrone](https://www.synchrone.fr).
-It's allow your company to to control, manage, maintain and track all your hardware and license directly from your Android device. 
+It's allow your company to to control, manage, maintain and track all your hardware and licenses directly from your Android device. 
 
 ## Functionalities
 
@@ -66,6 +66,7 @@ It's allow your company to to control, manage, maintain and track all your hardw
 ## Documentation
 
 - How to configure the application for your environment, please read the [INSTALL.md](./INSTALL.md)
+- If you want to contribute : [CONTRIBUTING.md](./CONTRIBUTING.md) (⚠under construction)
 
 ## Screenshots
 
@@ -88,16 +89,16 @@ If there is any trouble with the GLPI part you can inform them on there own gith
 
 ## Request features
 
-If you have any idea of new features that can be implemented, feel free to contact us by mail to [contact@synchrone-lab.fr](mailto:contact@synchrone-lab.fr?subject=[GitHub Glpi Android Client]).
+If you have any idea of new features that can be implemented, feel free to contact us by mail to [contact@synchrone-lab.fr](mailto:contact@synchrone-lab.fr?subject=[GitHub%20Glpi%20Android%20Client]).
 
 ## Copying
 
 * **Code**: you can redistribute it and/or modify
     it under the terms of the GNU General Public License ([GPLv2](https://www.gnu.org/licenses/gpl-2.0.en.html)).
 
-## Credit
+## Credits
 
 * [Synchrone](https://synchrone.fr)
 * Arnault Pascual : Android Tech Lead 
 * Quentin Diebold : Software engineer
-* Pierrick Bouvier : Software engineer
+* Pierrick Bouvier Aubrège : Software engineer
