@@ -55,6 +55,8 @@ It's allow your company to to control, manage, maintain and track all your hardw
 | :------------ | :--: | :--: | :--: | :--: | :--: |
 | **0.9.0**     |  ✔   |  ✔   |  ✔   |  ✔   |  ❌   |
 
+- Currently working on 10+ API trouble
+
 #### 	Inventory Agent & Android Versions
 
 ​		GLPI Android Client is compatible with Android API 23 and target is API 31.
