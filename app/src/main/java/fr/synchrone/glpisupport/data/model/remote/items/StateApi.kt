@@ -41,6 +41,6 @@ data class StateApi(
     val isVisibleNetworkEquipment: Boolean = _is_visible_networkequipment == 1
 
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "state"
+        override val typeName: String = "State"
     }
 }

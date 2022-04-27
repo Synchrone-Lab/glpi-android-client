@@ -16,6 +16,6 @@ data class MonitorModelApi(
     override val name: String
 ): Parcelable, EntitledApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "monitormodel"
+        override val typeName: String = "MonitorModel"
     }
 }

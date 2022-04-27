@@ -16,6 +16,6 @@ data class RackTypeApi(
     override val name: String
 ): Parcelable, EntitledApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "racktype"
+        override val typeName: String = "RackType"
     }
 }

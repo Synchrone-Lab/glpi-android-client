@@ -26,6 +26,6 @@ data class DCRoomApi (
     val datacenterId : Int
 ): Parcelable, ItemApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "dcroom"
+        override val typeName: String = "DcRoom"
     }
 }

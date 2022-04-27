@@ -16,6 +16,6 @@ data class PrinterTypeApi(
     override val name: String
 ): Parcelable, EntitledApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "printertype"
+        override val typeName: String = "PrinterType"
     }
 }

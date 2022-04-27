@@ -16,6 +16,6 @@ data class BudgetApi(
     override val name: String
 ): Parcelable, EntitledApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "budget"
+        override val typeName: String = "Budget"
     }
 }

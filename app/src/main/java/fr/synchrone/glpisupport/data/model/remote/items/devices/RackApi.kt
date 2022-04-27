@@ -61,6 +61,6 @@ data class RackApi (
     override fun newInstanceWithInfoComs(infoComs: InfoComsApi): DeviceApi = copy(_infocoms = null) //No infocoms for rack
 
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "rack"
+        override val typeName: String = "Rack"
     }
 }

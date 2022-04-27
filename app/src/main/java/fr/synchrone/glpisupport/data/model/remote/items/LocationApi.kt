@@ -18,6 +18,6 @@ data class LocationApi(
     override val entityId: Int,
 ): Parcelable, ItemApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "location"
+        override val typeName: String = "Location"
     }
 }

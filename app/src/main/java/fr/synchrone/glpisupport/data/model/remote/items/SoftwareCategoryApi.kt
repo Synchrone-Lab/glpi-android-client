@@ -16,6 +16,6 @@ data class SoftwareCategoryApi(
     override val name: String
 ): Parcelable, EntitledApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "softwarecategory"
+        override val typeName: String = "SoftwareCategory"
     }
 }

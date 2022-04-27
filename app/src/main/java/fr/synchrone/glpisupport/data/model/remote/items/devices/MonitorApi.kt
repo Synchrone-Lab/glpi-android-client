@@ -69,6 +69,6 @@ data class MonitorApi(
     override fun newInstanceWithInfoComs(infoComs: InfoComsApi): DeviceApi = copy(_infocoms = infoComs)
 
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "monitor"
+        override val typeName: String = "Monitor"
     }
 }

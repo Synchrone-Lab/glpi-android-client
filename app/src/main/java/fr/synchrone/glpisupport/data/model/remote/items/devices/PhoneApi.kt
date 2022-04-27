@@ -47,6 +47,6 @@ data class PhoneApi(
     override fun newInstanceWithInfoComs(infoComs: InfoComsApi): DeviceApi = copy(_infocoms = infoComs)
 
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "phone"
+        override val typeName: String = "Phone"
     }
 }

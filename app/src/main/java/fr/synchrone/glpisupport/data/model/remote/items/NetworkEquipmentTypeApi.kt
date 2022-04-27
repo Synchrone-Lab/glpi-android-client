@@ -16,6 +16,6 @@ data class NetworkEquipmentTypeApi(
     override val name: String
 ): Parcelable, EntitledApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "networkequipmenttype"
+        override val typeName: String = "NetworkEquipmentType"
     }
 }

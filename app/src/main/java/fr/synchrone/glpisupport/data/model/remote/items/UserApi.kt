@@ -36,6 +36,6 @@ data class UserApi(
     }
 
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "user"
+        override val typeName: String = "User"
     }
 }

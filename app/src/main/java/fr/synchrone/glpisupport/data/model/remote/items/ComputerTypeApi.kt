@@ -16,6 +16,6 @@ data class ComputerTypeApi(
     override val name: String
 ): Parcelable, EntitledApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "computertype"
+        override val typeName: String = "ComputerType"
     }
 }

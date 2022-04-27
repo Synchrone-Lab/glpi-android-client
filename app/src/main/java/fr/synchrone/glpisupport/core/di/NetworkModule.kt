@@ -22,7 +22,7 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
-    private const val BASE_URL = "http://YouUrlGoesHere/apirest.php"
+    private const val BASE_URL = "http://172.18.0.162/glpi-prd/apirest.php/"
 
     @Provides
     @Singleton

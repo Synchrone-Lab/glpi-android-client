@@ -18,6 +18,6 @@ data class SupplierApi(
     override val entityId: Int,
 ): Parcelable, ItemApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "supplier"
+        override val typeName: String = "Supplier"
     }
 }

@@ -18,6 +18,6 @@ data class GroupApi(
     override val entityId: Int
 ): Parcelable, ItemApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "group"
+        override val typeName: String = "Group"
     }
 }

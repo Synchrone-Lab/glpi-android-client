@@ -16,6 +16,6 @@ data class PhoneTypeApi(
     override val name: String
 ): Parcelable, EntitledApi {
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "phonetype"
+        override val typeName: String = "PhoneType"
     }
 }

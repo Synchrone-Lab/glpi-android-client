@@ -41,6 +41,6 @@ data class SoftwareApi(
     override fun newInstanceWithInfoComs(infoComs: InfoComsApi): DeviceApi = copy(_infocoms = infoComs)
 
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "software"
+        override val typeName: String = "Software"
     }
 }

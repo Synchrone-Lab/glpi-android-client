@@ -61,6 +61,6 @@ data class InfoComsApi(
     override val name = ""
 
     companion object: ItemApiCompanionObject {
-        override val typeName: String = "infocom"
+        override val typeName: String = "InfoCom"
     }
 }
